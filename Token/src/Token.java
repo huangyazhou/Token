@@ -19,6 +19,7 @@ public class Token
         String authToken = SHA1.toSHA1(str);
         
         contentToTxt(System.getProperty("user.dir") + "\\bbb.txt", authToken);
+        System.out.println(authToken);
     }
     
     public static String readTxtFile(File fileName)
